@@ -1,19 +1,24 @@
-class AeroPlane2
-{
-	public void takingOff()
+//final abstract class AeroPlane2 //illegal
+abstract class AeroPlane2 {
+	
+	static
 	{
-		System.out.println("Aeroplane must takeOff in order to fly");
+		System.out.println("AeroPlane2");
 	}
 	
-	public void fly()
+	public AeroPlane2()
 	{
-		System.out.println("AeroPlane is flying");
+		System.out.println("AeroPlanr2 Constrctor");
 	}
+	//abstract int age; Illegal modifier for the field age; only public, protected, private, static, final, transient & volatile are permitted
+//	public final abstract void takingOff(); //illegal
 	
-	public void landing()
-	{
-		System.out.println("Aeroplane is landing");
-	}
+	public abstract void takingOff();
+	
+	public abstract void fly();
+	
+	public abstract void landing();
+	
 }
 class CargoPlane2 extends AeroPlane2
 {
@@ -78,6 +83,8 @@ public class LaunchPoly3
 {
 	public static void main(String[] args)
 	{
+		//AeroPlane2 ar=new AeroPlane2(); we cannot create instance/object of an abstract class
+		
 		CargoPlane2 cp=new CargoPlane2();
 		
 		FighterPlane2 fp=new FighterPlane2();
@@ -91,3 +98,4 @@ public class LaunchPoly3
 	}
 
 }
+

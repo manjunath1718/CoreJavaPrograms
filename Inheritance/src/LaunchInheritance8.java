@@ -2,6 +2,10 @@ class Alpha2
 {
 	int a, b;
 	
+	{
+		System.out.println("instance block of alpha");
+	}
+	
 	public Alpha2()
 	{
 		a=10;
@@ -19,6 +23,10 @@ class Alpha2
 class Beta2 extends Alpha2
 {
 	int x, y;
+	
+	{
+		System.out.println("instance block of beta");
+	}
 	
 	public Beta2()
 	{

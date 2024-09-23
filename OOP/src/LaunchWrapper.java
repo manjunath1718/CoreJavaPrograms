@@ -20,7 +20,7 @@ public class LaunchWrapper
 		Integer x=Integer.valueOf(n1);  //boxing
 		
 		//UnBoxing : Converting wrapper class object back to its corrsponding primitive data type
-		//UnBoxing : Automatically Converting wrapper class object back to its corrsponding primitive data type by java compiler
+		//Auto UnBoxing : Automatically Converting wrapper class object back to its corrsponding primitive data type by java compiler
 		
 		Integer n3=Integer.valueOf(44);
 		int n4=n3;//auto unboxing

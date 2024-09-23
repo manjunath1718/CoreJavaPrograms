@@ -1,9 +1,8 @@
 
-public class DemoApp 
-{
+public class DemoApp {
 
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
+		
 //		int a=44;
 //		System.out.println("a");//a
 //		System.out.println(a);//44
